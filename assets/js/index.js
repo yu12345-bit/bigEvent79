@@ -1,7 +1,7 @@
 // 发送ajax请求 获取用户信息
 function getUserInfo () {
     axios.get("/my/userinfo").then((res)=> {
-        console.log(res);
+        // console.log(res);
         if (res.data.status !==0) {
             return  layer.msg('获取用户信息失败')
         }
